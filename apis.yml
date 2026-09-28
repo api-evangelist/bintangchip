@@ -1,23 +1,51 @@
 aid: bintangchip
+
 name: Bintangchip
-description: 'Bintangchip is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bintangchip is a technology company focused on semiconductor solutions and hardware design. The company was initially added to the API Evangelist network as a stub during the harvest process, and its profile is being expanded through the enrichment pipeline to capture its API offerings and documentation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bintangchip/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Semiconductor
+- Hardware
+- Technology
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bintangchip-hosts.yml
+- type: Vendors
+  url: vendors/bintangchip-vendors.yml
+- type: DomainSecurity
+  url: security/bintangchip-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/bintangchip
+
+apis: []
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
